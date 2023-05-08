@@ -30,10 +30,11 @@ a:visited {text-decoration: none; color: black;}
 </style>
 
 <script>
-    function changeImage(image) {
-  document.getElementById("myImage").src = image;
-}
+    function changeImage(image) 
+    {document.getElementById("myImage").src = image;}
 </script>
+
+
    </head>
 
    <body>
@@ -90,7 +91,11 @@ a:visited {text-decoration: none; color: black;}
 <img id="myImage" src="img9/cat2.jpeg" width="100px"
  onmouseover="changeImage('img9/cat.jpeg')"
  onmouseout="changeImage('img9/cat2.jpeg')">
- 
+
+ <img id="test" src="img9/cat.jpeg"  width="100px">
+ <button onclick="document.getElementById('test').src='img9/cat3.jpeg'"> 새 고양이 보기 </button>
+ <button onclick="document.getElementById('test').src='img9/cat.jpeg'"> 이전 고양이 보기</button>
+
 </body>
 </html>
 
