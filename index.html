@@ -24,8 +24,16 @@ th {width: 100px;}
 .gray {background-color: rgb(193, 193, 193);}
 
 a:link {text-decoration: none; color: black;}
-a:visited {text-decoration: none; color: black;}   
+a:visited {text-decoration: none; color: black;}  
+
+
 </style>
+
+<script>
+    function changeImage(image) {
+  document.getElementById("myImage").src = image;
+}
+</script>
    </head>
 
    <body>
@@ -66,7 +74,7 @@ a:visited {text-decoration: none; color: black;}
     </tr>
    </table>
 
-   <hr>
+<hr>
 <a href="newperson.html">[회원가입]</a>
 <a href="rubato.html">[루바토 펜션 안내]</a>
 <a href="festival.html">[페스티벌 안내]</a>
@@ -74,5 +82,15 @@ a:visited {text-decoration: none; color: black;}
 <a href="sale.html">[세일 안내]</a>
 <a href="schedule.html">[월간 일정표]</a>
 
+<hr>
+<img onmouseout="this.style.width='100px'"
+     onmouseover="this.style.width='200px'" 
+     src="img9/cat.jpeg" width="100px">
+
+<img id="myImage" src="img9/cat2.jpeg" width="100px"
+ onmouseover="changeImage('img9/cat.jpeg')"
+ onmouseout="changeImage('img9/cat2.jpeg')">
+ 
 </body>
 </html>
+
