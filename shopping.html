@@ -7,7 +7,7 @@
 * {margin: 0;
    padding: 0;}
 
-   ul {list-style-type: none;}   
+ul {list-style-type: none;}   
 
 #main_title {margin: 10px;
     padding-bottom: 6px;
@@ -18,10 +18,12 @@
             margin: 10px;
             border-bottom: solid 1px #cccccc;}    
 
-.price .image .saler .int {display: inline;}         
+.price .image .saler .int .small {display: inline;}         
 
-.image {float: left;
+.image {clear: both;
+        float: left;
         width: 100px;
+        height: 100px;
         padding: 10px;}            
  
 .int {float: left;
@@ -40,6 +42,9 @@
 .saler {float: left;
         width: 140px;}
 
+a:link {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}        
+
 </style>
 </head>
 
@@ -47,43 +52,43 @@
 <h2 id="main_title">판매 제품 목록</h2>
 
 <div class="list_item">
-  <div class="image"><img src='img9/bagel.png' width="100"></div>
+  <div class="image"><a href="index.html"><img src='img9/bagel.png' width="100"></a></div>
   <div class="int">베이글</div>
   <ul class="price">
     <li class="red">3800원</li>
     <li class="small">배송비 2000원</li>
   </ul>
-  <div class="saler">런던베이글뮤지엄</div>
+  <div class="saler"><a href="self.html">런던베이글뮤지엄</a></div>
 </div>
 
 <div class="list_item">
-    <div class="image"><img src='img9/cookie.png' width="100"></div>
+    <div class="image"><a href="index.html"><img src='img9/cookie.png' width="100"></a></div>
     <div class="int">쿠키</div>
     <ul class="price">
       <li class="red">3500원</li>
       <li class="small">배송비 2000원</li>
     </ul>
-    <div class="saler">메가커피</div>
+    <div class="saler"><a href="self.html">메가커피</a></div>
 </div>
 
 <div class="list_item">
-    <div class="image"><img src='img9/salted.png' width="100"></div>
+    <div class="image"><a href="index.html"><img src='img9/salted.png' width="100"></a></div>
     <div class="int">소금빵</div>
     <ul class="price">
       <li class="red">2000원</li>
       <li class="small">배송비 2000원</li>
     </ul>
-    <div class="saler">빽다방</div>
+    <div class="saler"><a href="self.html">빽다방</a></div>
 </div>  
 
 <div class="list_item">
-    <div class="image"><img src='img9/butter.png' width="100"></div>
+    <div class="image"><a href="index.html"><img src='img9/butter.png' width="100"></a></div>
     <div class="int">앙버터</div>
     <ul class="price">
       <li class="red">3400원</li>
       <li class="small">배송비 2000원</li>
     </ul>
-    <div class="saler">이디야</div>
+    <div class="saler"><a href="self.html">이디야</a></div>
 </div>  
 
 
